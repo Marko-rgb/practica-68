@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>p68</title>
+  <meta charset="UTF-8">
+</head>
+<body>
+
+  <input type="checkbox" id="chec" name="chec">
+  Confirma los términos y condiciones?
+  <br>
+  <input type="button" id="boton" name="boton" value="enviar" disabled>
+  
+<script>
+  addEventListener('DOMContentLoaded',fun1,false);
+  
+  function fun1()
+  {
+    document.getElementById('chec').addEventListener('change',seleccion,false);
+  }
+
+  function seleccion()
+  {
+
+    if (document.getElementById('chec').checked==true)
+    {
+      document.getElementById('boton').disabled=false;
+    } 
+    else    
+      document.getElementById('boton').disabled=true;
+  }
+</script>
+  
+</body>
+</html>
